@@ -1,0 +1,106 @@
+body {
+  display: flex;
+
+  justify-content: center;
+  align-content: center;
+  background-color: #433c49;
+}
+
+.container {
+  width: 300px;
+  height: 450px;
+  display: grid;
+  align-content: center;
+  justify-content: stretch;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+  position: relative;
+  top: 100px;
+  border-radius: 10px;
+  background: #433c49;
+  box-shadow: 9px 9px 16px #332e37, -9px -9px 16px #534a5b;
+}
+#equals {
+  border-radius: 10px;
+  background: orangered;
+  box-shadow: 6px 6px 12px orangered, -6px -6px 12px, orange;
+  color: rgb(255, 255, 255, 255);
+  font-weight: bold;
+  font-size: large;
+}
+
+.expand {
+  width: 125px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #3c3642, #48404e);
+  box-shadow: 6px 6px 12px #332e37, -6px -6px 12px #534a5b;
+  color: rgb(255, 255, 255, 255);
+  font-weight: bold;
+}
+#expand {
+  width: 125px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #3c3642, #48404e);
+  box-shadow: 6px 6px 12px #332e37, -6px -6px 12px #534a5b;
+  font-weight: bold;
+  font-size: large;
+  color: orangered;
+}
+button {
+  height: 55px;
+  width: 55px;
+
+  border: none;
+  margin: 5px;
+}
+button:active {
+  opacity: 0;
+}
+input {
+  text-align: right;
+  width: 230px;
+  height: 55px;
+  color: rgb(255, 255, 255, 255);
+  margin-bottom: 10px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  padding-right: 10px;
+  border-radius: 10px;
+  background: #433c49;
+  box-shadow: inset 9px 9px 16px #332e37, inset -9px -9px 16px #534a5b;
+}
+::placeholder {
+  opacity: 1;
+
+  color: rgb(255, 255, 255, 255);
+}
+
+hr {
+  width: 100%;
+  border: 2px solid #48404e;
+}
+.numbers {
+  color: rgb(255, 255, 255, 255);
+  font-weight: bold;
+  font-size: large;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #3c3642, #48404e);
+  box-shadow: 6px 6px 12px #332e37, -6px -6px 12px #534a5b;
+}
+
+.numbers:hover,
+.expand:hover,
+.operators:hover,
+#expand:hover,
+#equals:hover {
+  transform: scale(1.1);
+}
+.operators {
+  color: orangered;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #3c3642, #48404e);
+  box-shadow: 6px 6px 12px #332e37, -6px -6px 12px #534a5b;
+}
