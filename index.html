@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href = "cacl.png" rel="icon" type="image/gif">
     <title>Simple Calculator</title>
   </head>
   <body>
@@ -19,12 +24,12 @@
       <div class="bottom">
         <div>
           <button onclick="Delete()" id="expand">C</button>
-         
+
           <button class="operators" onclick="Backspace()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
-              height="11"
+              height="10"
               fill="currentColor"
               class="bi bi-backspace"
               viewBox="0 0 16 16"
@@ -40,7 +45,7 @@
           <button onclick="Display('/')" class="operators">&divide;</button>
         </div>
         <div>
-          <button onclick="Display('7')" class="numbers" >7</button>
+          <button onclick="Display('7')" class="numbers">7</button>
           <button onclick="Display('8')" class="numbers">8</button>
           <button onclick="Display('9')" class="numbers">9</button>
           <button onclick="Display('*')" class="operators">&times;</button>
@@ -60,7 +65,9 @@
         <div>
           <button class="expand" onclick="Display('0')">0</button>
           <button onclick="Display('.')" class="numbers">.</button>
-          <button onclick="equals()" class="equals">&equals;</button>
+          <button onclick="equals()" class="equals" id="equals">
+            &equals;
+          </button>
         </div>
       </div>
     </div>
